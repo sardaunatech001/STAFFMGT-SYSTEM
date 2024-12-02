@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Staff Management System</h1>
+
+    <!-- Add/Edit Form -->
+    <h2>Add/Edit Staff</h2>
+    <form id="staffForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="position" placeholder="Position" required />
+      <input type="text" id="performance" placeholder="Performance Rating" required />
+      <input type="hidden" id="staffId" />
+      <button type="submit">Save</button>
+    </form>
+
+    <!-- Staff List -->
+    <h2>Staff List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Performance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="staffList"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
